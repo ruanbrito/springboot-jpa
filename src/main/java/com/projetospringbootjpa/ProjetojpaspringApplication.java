@@ -1,4 +1,4 @@
-package com.projeto.jpa.spring.projetojpaspring;
+package com.projetospringbootjpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
