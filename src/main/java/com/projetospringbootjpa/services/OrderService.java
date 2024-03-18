@@ -11,16 +11,16 @@ import com.projetospringbootjpa.repositories.OrderRepository;
 
 @Service
 public class OrderService {
-	
+
 	@Autowired
 	private OrderRepository orderRepository;
-	
-	public List<Order> findAll(){
+
+	public List<Order> findAll() {
 		return orderRepository.findAll();
 	}
-	
+
 	public Order fidnById(Long id) {
-		Optional<Order> user = orderRepository.findById(id);
-		return user.get();
+		Optional<Order> order = orderRepository.findById(id);
+		return order.get();
 	}
 }
